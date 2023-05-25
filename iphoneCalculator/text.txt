@@ -1,0 +1,157 @@
+let value=$(".value");
+let number=$(".number");
+let zero=$(".number-0");
+let one=$(".number-1");
+let two=$(".number-2");
+let three=$(".number-3");
+let four=$(".number-4");
+let five=$(".number-5");
+let six=$(".number-6");
+let seven=$(".number-7");
+let eight=$(".number-8");
+let nine=$(".number-9");
+let arrey=[zero, one ,two, three ,four, five, six,seven, eight, nine];
+
+for (let i = 0; i <= arrey.length; i++) {
+  arrey[i].click(myfunction);
+
+
+function myfunction() {
+   let clikednum="";
+  if (i===0) {
+    clikednum=0;
+  } else if(i===1) {
+    clikednum=1;
+   }
+   else if(i===2) {
+    clikednum=2;
+   }
+   else if(i===3) {
+    clikednum=3;
+   }
+   else if(i===4) {
+    clikednum=4;
+   }
+   else if(i===5) {
+    clikednum=5;
+   }
+   else if(i===6) {
+    clikednum=6;
+   }
+   else if(i===7) {
+    clikednum=7;
+   }
+   else if(i===8) {
+    clikednum=8;
+   }
+   else if(i===9) {
+    clikednum=9;
+ }
+let oldcliked=clikednum;
+
+if (clikednum !== "") {
+      value.text(oldcliked + clikednum);
+      oldcliked = value.text();
+   }
+
+ }
+}
+
+// let value = $(".value");
+// let arrey = [$(".number-1"), $(".number-2"), $(".number-3"), $(".number-4"), $(".number-5"), $(".number-6"), $(".number-7"), $(".number-8"), $(".number-9"), $(".number-0")];
+// let previousNumber = "";
+
+// for (let i = 0; i < arrey.length; i++) {
+//   arrey[i].click(abebe);
+
+// function abebe () {
+//   let currentNumber = "";
+//   if (i === 0) {
+//     currentNumber = 1;
+//   } else if (i === 1) {
+//     currentNumber = 2;
+//   } else if (i === 2) {
+//     currentNumber = 3;
+//   } else if (i === 3) {
+//     currentNumber = 4;
+//   } else if (i === 4) {
+//     currentNumber = 5;
+//   } else if (i === 5) {
+//     currentNumber = 6;
+//   } else if (i === 6) {
+//     currentNumber = 7;
+//   } else if (i === 7) {
+//     currentNumber = 8;
+//   } else if (i === 8) {
+//       currentNumber = 9;
+//   }
+//       else if (i === 9) {
+//           currentNumber = 0;
+//   }
+//   if (currentNumber !== "") {
+//     value.text(previousNumber + currentNumber);
+//     previousNumber = value.text();
+//   }
+// }
+// }
+
+// $("button").click(function(){
+//     $("p").text("Hello world!");
+//   });
+
+// var divElement = document.getElementsByClassName("nine").innerHTML;
+// // var divValue = divElement
+// console.log(divElement);
+
+
+
+// let value = $(".value");
+// let number = $(".number");
+// let zero = $(".number-0");
+// let one = $(".number-1");
+// let two = $(".number-2");
+// let three = $(".number-3");
+// let four = $(".number-4");
+// let five = $(".number-5");
+// let six = $(".number-6");
+// let seven = $(".number-7");
+// let eight = $(".number-8");
+// let nine = $(".number-9");
+// let arrey = [zero, one, two, three, four, five, six, seven, eight, nine];
+
+// for (let i = 0; i < arrey.length; i++) {
+//   arrey[i].click(function() {
+//     myfunction(i);
+//   });
+// }
+
+// function myfunction(i) {
+//   let clikednum = "";
+//   if (i === 0) {
+//     clikednum = 0;
+//   } else if (i === 1) {
+//     clikednum = 1;
+//   } else if (i === 2) {
+//     clikednum = 2;
+//   } else if (i === 3) {
+//     clikednum = 3;
+//   } else if (i === 4) {
+//     clikednum = 4;
+//   } else if (i === 5) {
+//     clikednum = 5;
+//   } else if (i === 6) {
+//     clikednum = 6;
+//   } else if (i === 7) {
+//     clikednum = 7;
+//   } else if (i === 8) {
+//     clikednum = 8;
+//   } else if (i === 9) {
+//     clikednum = 9;
+//   }
+  
+//   if (clikednum !== "") {
+//     let oldcliked = Number(value.text());
+//     value.text(oldcliked.toString() + clikednum.toString());
+
+//   }
+// }
